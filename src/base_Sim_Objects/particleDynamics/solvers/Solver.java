@@ -1,8 +1,7 @@
-package base_Utils_Objects.particleDynamics.solvers;
+package base_Sim_Objects.particleDynamics.solvers;
 
 import base_Math_Objects.vectorObjs.floats.myVectorf;
 import base_Sim_Objects.particleDynamics.particles.myParticle;
-import base_Sim_Objects.particleDynamics.solvers.SolverType;
 
 public class Solver {
 	//value for rk4 general form
