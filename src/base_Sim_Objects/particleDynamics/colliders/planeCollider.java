@@ -49,12 +49,12 @@ public class planeCollider extends baseCollider{
 		//far from plane - no need to check further in collision detection
 		double distFromPlane = partLocVec._dot(planeNormal) - myParticle.partRad; 				//distance edge of particle is from plane
 		if (distFromPlane  > myParticle.tenPartRads){ return NoCol;}									//if further away from plane than 10 * particle radius then no collision this or next cycle
-		if (distFromPlane  < -MyMathUtils.eps) { return BrchCol; }						      	//immediate collision - breached plane by more than eps*rad
+		if (distFromPlane  < -MyMathUtils.EPS) { return BrchCol; }						      	//immediate collision - breached plane by more than eps*rad
 		//dist between epsVal and 10 snoflake rads - possible collision next cycle
 		double spdInPlaneNormDir = part.aVelocity[part.curIDX]._dot(planeNormal),					//velocity in direction of plane normal - speed toward plane is negative of this
 				accInPlaneNormDir = part.aForceAcc[part.curIDX]._dot(planeNormal)/part.mass;		//acc in dir of plane normal - acc toward plane is negative of this
 		if((spdInPlaneNormDir > 0) && (accInPlaneNormDir > 0)){ return NoCol;}						//not touching plane, moving toward plane or accelerating toward plane, so no collision possible this time step
-		if (distFromPlane  < MyMathUtils.eps) { return CntctCol; }								//contact - address forces
+		if (distFromPlane  < MyMathUtils.EPS) { return CntctCol; }								//contact - address forces
 		//by here, within col dist of plane, and moving toward, or tangent to, plane - predict motion
 		double hfDelT2 = .5 * deltaT * deltaT,
 				velPartInPlaneDir = spdInPlaneNormDir * deltaT,
@@ -90,7 +90,7 @@ public class planeCollider extends baseCollider{
 			else if (part.solveType == SolverType.VERLET) { handleVerletCol(part); }	//handle reflection/velocity change by swapping old and new positions - need to scale by krest			
 			else {//forcibly move particle to just a bit on the right side of the collider
 				distFromBreach *= -(2.001);
-				myVectorf newPos = myVectorf._add(partPos, myVectorf._mult(planeNormal,(distFromBreach + MyMathUtils.eps)));   //reflect position up from plane by slightly more than breach amount
+				myVectorf newPos = myVectorf._add(partPos, myVectorf._mult(planeNormal,(distFromBreach + MyMathUtils.EPS)));   //reflect position up from plane by slightly more than breach amount
 				//if(p.getSolveType() == GROUND){cout<<"dist from breach "<<distFromBreach<<" old position: "<<partPos<<" new position : "<<newPos<<endl;}
 				//part.position.peekFirst().set( newPos);
 				partPos.set( newPos);

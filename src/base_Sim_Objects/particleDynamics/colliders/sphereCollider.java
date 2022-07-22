@@ -49,7 +49,7 @@ public class sphereCollider extends baseCollider{
 		double distFromCtr = partLocVec.magn + myParticle.partRad;
 		if (distFromCtr < minMaxRadius[4]){ return NoCol;}						// more than 10x part radii from sphere surface - no collision assumed possible
 		double distFromCtrDiff  = distFromCtr - minMaxRadius[1];			//compare to largest dimension of ellipsoid - if still positive, then definite breach
-		if (distFromCtrDiff > MyMathUtils.eps_f) { return BrchCol; }						//immediate collision - breached plane by more than eps + snowflakerad
+		if (distFromCtrDiff > MyMathUtils.EPS_F) { return BrchCol; }						//immediate collision - breached plane by more than eps + snowflakerad
 	
 		double spdInRadNormDir = part.aVelocity[part.curIDX]._dot(vecToCtr),				//velocity in direction of particle-from-center vector
 				accInRadNormDir = part.aForceAcc[part.curIDX]._dot(vecToCtr)/part.mass;		//acc in direction of particle-from-center vector
