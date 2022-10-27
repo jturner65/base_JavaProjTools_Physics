@@ -1,7 +1,7 @@
 package base_Sim_Objects.particleDynamics.solvers;
 
 import base_Math_Objects.vectorObjs.floats.myVectorf;
-import base_Sim_Objects.particleDynamics.particles.myParticle;
+import base_Sim_Objects.particleDynamics.solvers.base.baseIntegrator;
 
 public class Solver {
 	//value for rk4 general form
@@ -33,18 +33,6 @@ public class Solver {
 	}	
 	public myVectorf[] Integrate(double deltaT, myVectorf[] _state, myVectorf[] _stateDot){	return intgrt.Integrate(deltaT, _state, _stateDot);}	
 }//mySolver class
-
-abstract class baseIntegrator{
-	public static myVectorf gravVec = new myVectorf(myParticle.gravVec);
-	public baseIntegrator(){}
-	protected myVectorf[] integrateExpE(double deltaT, myVectorf[] _state, myVectorf[] _stateDot){
-		myVectorf[] tmpVec = new myVectorf[2];
-		tmpVec[0] = myVectorf._add(_state[0], myVectorf._mult(_stateDot[0],deltaT));
-		tmpVec[1] = myVectorf._add(_state[1], myVectorf._mult(_stateDot[1],deltaT));
-		return tmpVec;
-	}
-	public abstract myVectorf[] Integrate(double deltaT, myVectorf[] _state, myVectorf[] _stateDot);
-}
 
 class intgrtNone extends baseIntegrator{
 	public intgrtNone(){}
