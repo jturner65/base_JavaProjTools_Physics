@@ -1,11 +1,11 @@
-package base_Sim_Objects.particleDynamics.colliders;
+package base_Physics_Objects.particleDynamics.colliders;
 
 import base_Math_Objects.MyMathUtils;
 import base_Math_Objects.vectorObjs.floats.myVectorf;
-import base_Sim_Objects.particleDynamics.colliders.base.CollisionType;
-import base_Sim_Objects.particleDynamics.colliders.base.baseCollider;
-import base_Sim_Objects.particleDynamics.particles.myParticle;
-import base_Sim_Objects.particleDynamics.solvers.SolverType;
+import base_Physics_Objects.particleDynamics.colliders.base.CollisionType;
+import base_Physics_Objects.particleDynamics.colliders.base.baseCollider;
+import base_Physics_Objects.particleDynamics.particles.myParticle;
+import base_Physics_Objects.particleDynamics.solvers.SolverType;
 
 public class planeCollider extends baseCollider{
 	//plane

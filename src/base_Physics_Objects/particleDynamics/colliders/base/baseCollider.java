@@ -1,7 +1,7 @@
-package base_Sim_Objects.particleDynamics.colliders.base;
+package base_Physics_Objects.particleDynamics.colliders.base;
 
 import base_Math_Objects.vectorObjs.floats.myVectorf;
-import base_Sim_Objects.particleDynamics.particles.myParticle;
+import base_Physics_Objects.particleDynamics.particles.myParticle;
 
 public abstract class baseCollider {
 	public static int ID_gen = 0;

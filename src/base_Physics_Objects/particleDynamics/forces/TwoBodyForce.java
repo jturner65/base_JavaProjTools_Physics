@@ -1,9 +1,9 @@
-package base_Sim_Objects.particleDynamics.forces;
+package base_Physics_Objects.particleDynamics.forces;
 
 import base_Math_Objects.vectorObjs.floats.myVectorf;
-import base_Sim_Objects.particleDynamics.forces.base.ForceType;
-import base_Sim_Objects.particleDynamics.forces.base.baseForce;
-import base_Sim_Objects.particleDynamics.particles.myParticle;
+import base_Physics_Objects.particleDynamics.forces.base.ForceType;
+import base_Physics_Objects.particleDynamics.forces.base.baseForce;
+import base_Physics_Objects.particleDynamics.particles.myParticle;
 
 public class TwoBodyForce extends baseForce{
 	//attractive/repulsive force

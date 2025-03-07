@@ -1,4 +1,4 @@
-package base_Sim_Objects.particleDynamics.solvers;
+package base_Physics_Objects.particleDynamics.solvers;
 
 import java.util.HashMap;
 import java.util.Map;

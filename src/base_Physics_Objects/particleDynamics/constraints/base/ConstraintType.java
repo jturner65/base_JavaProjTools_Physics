@@ -1,4 +1,4 @@
-package base_Sim_Objects.particleDynamics.constraints.base;
+package base_Physics_Objects.particleDynamics.constraints.base;
 
 import java.util.HashMap;
 import java.util.Map;

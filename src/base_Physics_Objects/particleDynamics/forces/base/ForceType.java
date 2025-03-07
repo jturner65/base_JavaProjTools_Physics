@@ -1,4 +1,4 @@
-package base_Sim_Objects.particleDynamics.forces.base;
+package base_Physics_Objects.particleDynamics.forces.base;
 
 import java.util.HashMap;
 import java.util.Map;

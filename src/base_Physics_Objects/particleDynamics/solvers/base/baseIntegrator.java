@@ -1,7 +1,7 @@
-package base_Sim_Objects.particleDynamics.solvers.base;
+package base_Physics_Objects.particleDynamics.solvers.base;
 
 import base_Math_Objects.vectorObjs.floats.myVectorf;
-import base_Sim_Objects.particleDynamics.particles.myParticle;
+import base_Physics_Objects.particleDynamics.particles.myParticle;
 
 public abstract class baseIntegrator{
 	public static myVectorf gravVec = new myVectorf(myParticle.gravVec);

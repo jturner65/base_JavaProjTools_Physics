@@ -1,10 +1,10 @@
-package base_Sim_Objects.particleDynamics.colliders;
+package base_Physics_Objects.particleDynamics.colliders;
 
 import base_Math_Objects.MyMathUtils;
 import base_Math_Objects.vectorObjs.floats.myVectorf;
-import base_Sim_Objects.particleDynamics.colliders.base.CollisionType;
-import base_Sim_Objects.particleDynamics.colliders.base.baseCollider;
-import base_Sim_Objects.particleDynamics.particles.myParticle;
+import base_Physics_Objects.particleDynamics.colliders.base.CollisionType;
+import base_Physics_Objects.particleDynamics.colliders.base.baseCollider;
+import base_Physics_Objects.particleDynamics.particles.myParticle;
 
 
 public class sphereCollider extends baseCollider{

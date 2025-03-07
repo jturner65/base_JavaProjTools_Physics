@@ -1,7 +1,7 @@
-package base_Sim_Objects.particleDynamics.forces.base;
+package base_Physics_Objects.particleDynamics.forces.base;
 
 import base_Math_Objects.vectorObjs.floats.myVectorf;
-import base_Sim_Objects.particleDynamics.particles.myParticle;
+import base_Physics_Objects.particleDynamics.particles.myParticle;
 
 public abstract class baseForce {
 	public final float epsValCalc = .00000001f;
