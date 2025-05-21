@@ -11,7 +11,8 @@ public enum ConstraintType {
 	private static final String[] _typeName = new String[]{"None", "Circular"};
 	private static Map<Integer, ConstraintType> map = new HashMap<Integer, ConstraintType>(); 
     static { for (ConstraintType enumV : ConstraintType.values()) { map.put(enumV.ordinal(), enumV);}}
-	public int getVal(){return ordinal();} 	
+    public int getVal() {return ordinal();} 	
+	public int getOrdinal() {return ordinal();} 	
 	public static ConstraintType getEnumByIndex(int idx){return map.get(idx);}
 	public static ConstraintType getEnumFromValue(int idx){return map.get(idx);}
 	public static int getNumVals(){return map.size();}

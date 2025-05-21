@@ -12,7 +12,8 @@ public enum CollisionType {
 	private static final String[] _typeName = new String[]{"None", "Flat", "Particle", "Spherical", "Cylinder", "BBox"};
 	private static Map<Integer, CollisionType> map = new HashMap<Integer, CollisionType>(); 
 	static { for (CollisionType enumV : CollisionType.values()) { map.put(enumV.ordinal(), enumV);}}
-	public int getVal(){return ordinal();} 	
+	public int getVal() {return ordinal();} 	
+	public int getOrdinal() {return ordinal();} 	
 	public static CollisionType getEnumByIndex(int idx){return map.get(idx);}
 	public static CollisionType getEnumFromValue(int idx){return map.get(idx);}
 	public static int getNumVals(){return map.size();}						//get # of values in enum	

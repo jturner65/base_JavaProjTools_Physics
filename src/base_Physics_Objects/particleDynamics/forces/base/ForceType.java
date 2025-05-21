@@ -17,7 +17,8 @@ public enum ForceType {
 	private static final String[] _typeName = new String[]{"None", "Scalar", "Vector", "Attractor", "Repulsor", "Damped Spring", "Force back to ThetaBar"};
 	private static Map<Integer, ForceType> map = new HashMap<Integer, ForceType>(); 
 	static { for (ForceType enumV : ForceType.values()) { map.put(enumV.ordinal(), enumV);}}
-	public int getVal(){return ordinal();} 	
+	public int getVal() {return ordinal();} 	
+	public int getOrdinal() {return ordinal();} 	
 	public static ForceType getEnumByIndex(int idx){return map.get(idx);}
 	public static ForceType getEnumFromValue(int idx){return map.get(idx);}
 	public static int getNumVals(){return map.size();}						//get # of values in enum	
