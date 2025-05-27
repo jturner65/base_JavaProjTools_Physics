@@ -104,8 +104,8 @@ public class sphereCollider extends baseCollider{
 	//	myVector sNormPartP = getSphereNormal(partPos);				//normal through current point and center, in direction of collision surface
 	//	myVector partSpherePnt =  myVector._add(center, myVector._mult(sNormPartP,-snoGlobe.snowGlobRad));			//point on ellipsoid surface colinear with center and particle move point
 	//	double dist2wall = myVector._sub(partSpherePnt, partPos).magn, distFromWallChk = dist2wall - partVelPoint.magn;
-	//	if (distFromWallChk > pa.epsValCalc) { return NoCol; }
-	//	else if (distFromWallChk > -pa.epsValCalc) { return CntctCol; }
+	//	if (distFromWallChk > MyMathUtils.EPS_F) { return NoCol; }
+	//	else if (distFromWallChk > -MyMathUtils.EPS_F) { return CntctCol; }
 	//	else { return BrchCol; }
 	}//checkCollision		
 	
