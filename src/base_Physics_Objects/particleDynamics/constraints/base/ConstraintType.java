@@ -5,7 +5,7 @@ import java.util.Map;
 
 public enum ConstraintType {
 	C_NONE, C_Circular;
-	private final String[] _typeExplanation = new String[] {
+	private final String[] _typeExplanation = new String[]{
 			"None", "Circular/Bar-type constraint"
 	};
 	private static final String[] _typeName = new String[]{"None", "Circular"};

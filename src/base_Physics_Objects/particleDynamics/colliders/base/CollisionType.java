@@ -6,7 +6,7 @@ import java.util.Map;
 
 public enum CollisionType {
 	CL_NONE, FLAT, PARTICLE, SPHERE, CYLINDER, BOX;
-	private final String[] _typeExplanation = new String[] {
+	private final String[] _typeExplanation = new String[]{
 			"None", "Flat surface", "Particle to particle", "Spherical", "Cylinder", "Bounding Box"
 	};
 	private static final String[] _typeName = new String[]{"None", "Flat", "Particle", "Spherical", "Cylinder", "BBox"};

@@ -5,7 +5,7 @@ import java.util.Map;
 
 public enum ForceType {
 	F_NONE, S_SCALAR, S_VECTOR, ATTR, REPL, DAMPSPRING, DSPR_THETABAR;	
-	private final String[] _typeExplanation = new String[] {
+	private final String[] _typeExplanation = new String[]{
 			"None", 
 			"Gravity-type force (scalar particle quantity)", 
 			"Air Drag-type force (vector particle quantity)", 
