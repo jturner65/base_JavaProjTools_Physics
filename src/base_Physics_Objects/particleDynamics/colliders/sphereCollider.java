@@ -60,7 +60,7 @@ public class sphereCollider extends baseCollider{
                 accPartInRadNormDir = .5 * deltaT * deltaT * accInRadNormDir,
                 distWillMove = velPartInRadNormDir + accPartInRadNormDir;
         
-        myVectorf v2ctrORad = myVectorf._elemDiv(vecToCtr, radius);
+        myVectorf v2ctrORad = myVectorf._ewise_div(vecToCtr, radius);
         
         double a = v2ctrORad._dot(v2ctrORad), b = v2ctrORad._dot(center), c = center._dot(center) -1, ta = 2*a, discr1 = Math.pow(((b*b) - (2*ta*c)),.5), 
                 t1 = (-1*b + discr1)/(ta), t2 = (-1*b - discr1)/(ta);
